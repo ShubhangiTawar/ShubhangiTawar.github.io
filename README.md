@@ -1,5 +1,3 @@
 # shubhangitawar.github.io
 welcome to the world of Shubhangi Tawar
-images/
- ├── IMG_7388
- <img src="images/profile.jpg" alt="My photo" width="300">
+ <img src="images/IMG_7388" alt="Its me Shubhangi Tawar" width="300">
