@@ -86,11 +86,16 @@ body {
   text-decoration: none;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-  .pdf-frame {
-    height: 70vh;
+  .profile {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .pdf-link {
+    display: inline-block;
+  }
+}
 }
 }
 }
