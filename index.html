@@ -49,19 +49,25 @@
 
     </object>
   </section>
+<section class="pdf-section">
+  <h2>Portfolio</h2>
 
-  <!-- PDF AS WEB PAGE -->
-  <section style="width:100%; height:100vh; margin-top:40px;">
-    <object 
-      data="files/Portfolio.pdf" 
-      type="application/pdf" 
-      width="100%" 
-      height="100%">
-      
-      <p>
-        Your browser does not support PDFs.
-        <a href="files/Portfolio.pdf">Download PDF</a>
-        
+  <div class="pdf-wrapper">
+    <iframe
+      src="files/Portfolio.pdf"
+      class="pdf-frame"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+    </iframe>
+
+    <!-- Fallback -->
+    <div class="pdf-fallback">
+      <p>This browser does not support PDF preview.</p>
+      <a href="files/Portfolio.pdf" target="_blank">
+        Open Portfolio
+      </a>
+    </div>
+  </div>
+</section>
 <div class="contact-info">
   <p><strong>Phone:</strong> <a href="tel:+918839832864">+918839832864</a></p>
   <p><strong>Email:</strong> <a href="mailto:connect@shubhangitawar.in">connect@shubhangitawar.in</a></p>
