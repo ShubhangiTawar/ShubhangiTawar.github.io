@@ -4,137 +4,77 @@
   <meta charset="UTF-8">
   <title>Shubhangi Tawar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- CONTACT INFO -->
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="contact-info">
+    <div class="contact">
       <a href="tel:+918839832864">+91 88398 32864</a>
       <a href="mailto:connect@shubhangitawar.in">connect@shubhangitawar.in</a>
     </div>
   </header>
 
-  <!-- PROFILE -->
-  <section class="profile top-left">
-    <img src="images/IMG_7388.png" alt="Profile Image" class="profile-img">
+  <!-- MAIN LAYOUT -->
+  <main class="layout">
 
-    <div class="profile-text">
+    <!-- PROFILE -->
+    <aside class="profile">
+      <img src="images/IMG_7388.png" alt="Shubhangi Tawar">
+
       <h1>Shubhangi Tawar</h1>
-      <p>
-        Hi, I am a design professional specializing in craft and couture. An NID Alumna.
+      <p class="intro">
+        Design professional specialising in craft and couture.<br>
+        NID Alumna.
       </p>
-    </div>
-  </section>
+    </aside>
 
-  <!-- VIDEO -->
-  <section class="video-section">
-    <video class="project-video" muted autoplay loop playsinline>
-      <source src="videos/1768586064317256.mp4" type="video/mp4">
-    </video>
-  </section>
+    <!-- CONTENT -->
+    <section class="content">
 
-  <!-- RESUME -->
-  <section class="pdf-section">
-    <h2>Resume</h2>
-    <iframe
-      class="pdf-frame"
-      src="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf">
-    </iframe>
-    <a class="pdf-link" href="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf" target="_blank">
-      Open Resume
-    </a>
-  </section>
+      <!-- VIDEO -->
+      <section class="video-section">
+        <video autoplay muted loop playsinline>
+          <source src="videos/1768586064317256.mp4" type="video/mp4">
+        </video>
+      </section>
 
-  <!-- PORTFOLIO -->
-  <section class="pdf-section">
-    <h2>Portfolio</h2>
-    <iframe class="pdf-frame" src="files/Portfolio.pdf"></iframe>
-    <a class="pdf-link" href="files/Portfolio.pdf" target="_blank">
-      Open Portfolio
-    </a>
-  </section>
+      <!-- RESUME -->
+      <section class="document">
+        <h2>Resume</h2>
+        <iframe
+          src="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf"
+          loading="lazy">
+        </iframe>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Shubhangi Tawar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+        <a class="doc-link"
+           href="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf"
+           target="_blank">
+          Open Resume
+        </a>
+      </section>
 
-<body>
+      <!-- PORTFOLIO -->
+      <section class="document">
+        <h2>Portfolio</h2>
+        <iframe
+          src="files/Portfolio.pdf"
+          loading="lazy">
+        </iframe>
 
-  <!-- CONTACT INFO -->
-  <header class="site-header">
-    <div class="contact-info">
-      <p href="tel:+918839832864">+91 88398 32864</p>
-      <a href="mailto:connect@shubhangitawar.in">connect@shubhangitawar.in</a>
-    </div>
-  </header>
+        <a class="doc-link"
+           href="files/Portfolio.pdf"
+           target="_blank">
+          Open Portfolio
+        </a>
+      </section>
 
-  <!-- PROFILE --><div class="top-left">
-   <section class="profile">
-    <img src="images/IMG_7388.png" alt="Profile Image" class="profile-img">
+    </section>
 
-    <div class="profile-text">
-      <h1>Shubhangi Tawar</h1>
-      <p>
-        Hi, I am a design professional specializing in craft and couture. An NID Alumna.
-      </p>
-    </div>
-  </section>
-</div>
-
-<style>
-.top-left {
-  position: fixed;   /* or absolute */
-  top: 0;
-  left: 0;
-}
-</style>
-
- 
-<br>
-  <!-- VIDEO -->
-  <section class="video-section">
-    <video class="project-video" muted autoplay loop playsinline>
-      <source src="videos/1768586064317256.mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!-- RESUME -->
-  <section class="pdf-section">
-    <h2>Resume</h2>
-
-    <iframe
-      class="pdf-frame"
-      src="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf">
-    </iframe>
-
-    <a class="pdf-link" href="files/Shubhangitawar_NID_grassroot_resume_compressed.pdf" target="_blank">
-      Open Resume
-    </a>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="pdf-section">
-    <h2>Portfolio</h2>
-
-    <iframe
-      class="pdf-frame"
-      src="files/Portfolio.pdf">
-    </iframe>
-
-    <a class="pdf-link" href="files/Portfolio.pdf" target="_blank">
-      Open Portfolio
-    </a>
-  </section>
+  </main>
 
 </body>
 </html>
