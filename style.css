@@ -149,6 +149,14 @@ p {
     color: var(--accent-alizarin);
 }
 
+.nav-link.active {
+    color: var(--accent-alizarin);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -489,3 +497,96 @@ p {
     
     .cursor-dot, .cursor-outline { display: none; }
 }
+
+/* Design Services Page Styles */
+.services-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    backdrop-filter: blur(15px);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(227, 38, 54, 0.4);
+    box-shadow: 0 15px 35px rgba(227, 38, 54, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-premium);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+}
+
+.badge-tag {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background: rgba(227, 38, 54, 0.15);
+    color: var(--accent-alizarin);
+    border: 1px solid rgba(227, 38, 54, 0.3);
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.badge-coming-soon {
+    background: rgba(249, 246, 237, 0.1);
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+}
+
+/* Services Teaser Banner on Homepage */
+.services-teaser {
+    padding: 5rem 2rem;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.services-teaser-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
